@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll(".header-links a");
     const nav = document.querySelector(".header-nav");
     const bgSections = document.querySelectorAll(".has-background");
+    const mobileToggle = document.querySelector(".mobile-togglebar");
 
     function checkHeaderBackground() {
         let isOverBgSection = false;
@@ -28,10 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (isOverBgSection) {
             logo.src = logoDark;
-            // header.classList.remove("glass-nav");
+            header.classList.remove("glass-nav");
             header.classList.remove("on-light");
             nav.classList.remove("bg-[#ECECEC]");
             nav.classList.add("bg-[#E4E4E424]");
+            mobileToggle.classList.remove("border-black");
+            mobileToggle.classList.add("border-white");
+            mobileToggle.classList.remove("text-black");
+            mobileToggle.classList.add("text-white");
             links.forEach((link) => (link.style.color = "white"));
         } else {
             // Header is over light background → use colored logo + dark text
@@ -40,6 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
             header.classList.add("on-light");
             nav.classList.remove("bg-[#E4E4E424]");
             nav.classList.add("bg-[#ECECEC]");
+            mobileToggle.classList.remove("border-white");
+            mobileToggle.classList.add("border-black");
+            mobileToggle.classList.remove("text-white");
+            mobileToggle.classList.add("text-black");
             links.forEach((link) => (link.style.color = "#1D1D1D"));
         }
     }
@@ -145,6 +154,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // ===============================================
 
     ScrollSmoother.create({
+        wrapper: "#smooth-wrapper",
+        content: "#smooth-content",
         smooth: 1,
         effects: true,
         smoothTouch: 0.1,
@@ -173,52 +184,112 @@ document.addEventListener("DOMContentLoaded", () => {
             .to(offerings, { y: -40, ease: "none" }, 0);
     }
 
-    const container = document.querySelector(".about-card-container");
-    const col1 = document.querySelector(".about-card-column-1");
-    const col2 = document.querySelector(".about-card-column-2");
-    const col3 = document.querySelector(".about-card-column-3");
+    const items = document.querySelectorAll("[data-animate]");
+    if (items.length > 0) {
+        items.forEach((el) => {
+            gsap.set(el, { x: 25, opacity: 0 });
 
-    if (container && col1 && col2 && col3) {
-        gsap.fromTo(
-            col1,
-            { y: -40 },
-            {
-                y: 40,
+            gsap.to(el, {
+                x: 0,
+                opacity: 1,
+                ease: "none",
                 scrollTrigger: {
-                    trigger: container,
+                    trigger: el,
                     start: "top bottom",
-                    end: "bottom top",
-                    scrub: true,
+                    end: "top 70%",
+                    once: true,
                 },
-            }
-        );
-
-        gsap.fromTo(
-            col2,
-            { y: 40 },
-            {
-                y: -40,
-                scrollTrigger: {
-                    trigger: container,
-                    start: "top bottom",
-                    end: "bottom top",
-                    scrub: true,
-                },
-            }
-        );
-
-        gsap.fromTo(
-            col3,
-            { y: -40 },
-            {
-                y: 40,
-                scrollTrigger: {
-                    trigger: container,
-                    start: "top bottom",
-                    end: "bottom top",
-                    scrub: true,
-                },
-            }
-        );
+            });
+        });
     }
+
+    const headings = document.querySelectorAll("[data-animate-heading]");
+    headings.forEach((heading) => {
+        const lines = heading.querySelectorAll("[data-animate-heading] > span");
+
+        if (lines.length === 0) return;
+
+        lines.forEach((line, index) => {
+            const fromX = index % 2 === 0 ? -25 : 25;
+            gsap.set(line, { x: fromX, opacity: 0 });
+        });
+
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: heading,
+                start: "top bottom",
+                end: "top 70%",
+                once: true,
+            },
+        });
+
+        tl.to(lines, {
+            x: 0,
+            opacity: 1,
+            ease: "none",
+            stagger: 0,
+        });
+    });
+
+    // Wait a bit for ScrollSmoother to fully initialize
+    setTimeout(() => {
+        const container = document.querySelectorAll(".about-card-container");
+
+        container.forEach((cont) => {
+            if (!cont) return;
+
+            const col1 = cont.querySelector(".about-card-column-1");
+            const col2 = cont.querySelector(".about-card-column-2");
+            const col3 = cont.querySelector(".about-card-column-3");
+
+            if (!col1 || !col2 || !col3) return;
+
+            ScrollTrigger.refresh();
+
+            gsap.fromTo(
+                col1,
+                { y: -40 },
+                {
+                    y: 40,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: cont,
+                        start: "top bottom",
+                        end: "bottom top",
+                        scrub: true,
+                    },
+                }
+            );
+
+            gsap.fromTo(
+                col2,
+                { y: 40 },
+                {
+                    y: -40,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: cont,
+                        start: "top bottom",
+                        end: "bottom top",
+                        scrub: true,
+                    },
+                }
+            );
+
+            gsap.fromTo(
+                col3,
+                { y: -40 },
+                {
+                    y: 40,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: cont,
+                        start: "top bottom",
+                        end: "bottom top",
+                        scrub: true,
+                    },
+                }
+            );
+        });
+    }, 100);
 });

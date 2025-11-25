@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -7,6 +8,10 @@
 
 @theme {
     --breakpoint-3xl: 120rem;
+}
+
+[x-cloak] {
+    display: none;
 }
 
 .header img {
@@ -31,21 +36,8 @@
 }
 
 .glass-nav {
-    isolation: isolate;
-    transition: backdrop-filter 0.3s ease;
-}
-
-.glass-nav.glass-active {
-    backdrop-filter: blur(7px) url(#glass-filter);
-    -webkit-backdrop-filter: blur(7px) url(#glass-filter);
-}
-
-/* Hide the displacement map generator */
-#displacement-canvas {
-    position: fixed;
-    top: -9999px;
-    left: -9999px;
-    pointer-events: none;
+    background: #fff;
+    transition: all 0.3s ease;
 }
 
 /* ========================================= */
@@ -149,8 +141,40 @@
         @apply md:!text-[1.505vw] 3xl:!text-[1.429vw];
     }
 
+    .text28px-desktop {
+        @apply md:!text-[1.620vw] 3xl:!text-[1.539vw];
+    }
+
+    .text32px-desktop {
+        @apply md:!text-[1.852vw] 3xl:!text-[1.759vw];
+    }
+
+    .text40px-desktop {
+        @apply md:!text-[2.315vw] 3xl:!text-[2.199vw];
+    }
+
+    .text42px-desktop {
+        @apply md:!text-[2.431vw] 3xl:!text-[2.309vw];
+    }
+
+    .text48px-desktop {
+        @apply md:!text-[2.778vw] 3xl:!text-[2.639vw];
+    }
+
+    .text56px-desktop {
+        @apply md:!text-[3.241vw] 3xl:!text-[3.079vw];
+    }
+
+    .text70px-desktop {
+        @apply md:!text-[4.051vw] 3xl:!text-[3.848vw];
+    }
+
     .text72px-desktop {
         @apply md:!text-[4.167vw] 3xl:!text-[3.958vw];
+    }
+
+    .text80px-desktop {
+        @apply md:!text-[4.630vw] 3xl:!text-[4.398vw];
     }
 
     .text120px-desktop {
@@ -159,5 +183,53 @@
 
     .text160px-desktop {
         @apply md:!text-[9.259vw] 3xl:!text-[8.796vw];
+    }
+
+    .text220px-desktop {
+        @apply md:!text-[12.731vw] 3xl:!text-[12.095vw];
+    }
+
+    .text14px-mobile {
+        @apply text-[3.256vw];
+    }
+
+    .text15px-mobile {
+        @apply text-[3.488vw];
+    }
+
+    .text16px-mobile {
+        @apply text-[3.721vw];
+    }
+
+    .text18px-mobile {
+        @apply text-[4.186vw];
+    }
+
+    .text20px-mobile {
+        @apply text-[4.651vw];
+    }
+
+    .text24px-mobile {
+        @apply text-[5.581vw];
+    }
+
+    .text28px-mobile {
+        @apply text-[6.512vw];
+    }
+
+    .text40px-mobile {
+        @apply text-[9.302vw];
+    }
+
+    .text56px-mobile {
+        @apply text-[13.023vw];
+    }
+
+    .text60px-mobile {
+        @apply text-[13.953vw];
+    }
+
+    .text120px-mobile {
+        @apply text-[27.907vw];
     }
 }
