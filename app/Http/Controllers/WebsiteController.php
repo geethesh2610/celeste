@@ -9,10 +9,9 @@ class WebsiteController extends Controller
     public function index()
     {
         seo()
-            ->title('Celeste Lan Deals')
+            ->title('Celeste Land Deals')
             ->description('Theres really a lot of great stuff in here...')
-            ->images(
-                'https://mywebsite.com/images/blog-1/cover-image.webp',
+            ->images(asset('assets/images/meta.png')
             );
 
         $blogs = Blog::latest()->take(3)->get();
@@ -22,11 +21,23 @@ class WebsiteController extends Controller
 
     public function about()
     {
+        seo()
+            ->title('Celeste Land Deals')
+            ->description('Theres really a lot of great stuff in here...')
+            ->images(asset('assets/images/meta.png')
+            );
+
         return view('about');
     }
 
     public function plotCategoryPage($categorySlug)
     {
+        seo()
+            ->title('Celeste Land Deals')
+            ->description('Theres really a lot of great stuff in here...')
+            ->images(asset('assets/images/meta.png')
+            );
+
         $validSlugs = [
             'residential',
             'commercial',
@@ -51,6 +62,12 @@ class WebsiteController extends Controller
 
     public function plotDetailsPage($categorySlug, $plotSlug)
     {
+        seo()
+            ->title('Celeste Land Deals')
+            ->description('Theres really a lot of great stuff in here...')
+            ->images(asset('assets/images/meta.png')
+            );
+
         $plot = \App\Models\Plot::where('category', $categorySlug)
             ->where('slug', $plotSlug)
             ->firstOrFail();
@@ -68,26 +85,55 @@ class WebsiteController extends Controller
 
     public function services()
     {
+        seo()
+            ->title('Celeste Land Deals')
+            ->description('Theres really a lot of great stuff in here...')
+            ->images(asset('assets/images/meta.png')
+            );
+
         return view('services.index');
     }
 
     public function residentialServices()
     {
+        seo()
+            ->title('Celeste Land Deals')
+            ->description('Theres really a lot of great stuff in here...')
+            ->images(asset('assets/images/meta.png')
+            );
+
         return view('services.residential');
     }
 
     public function commercialServices()
     {
+        seo()
+            ->title('Celeste Land Deals')
+            ->description('Theres really a lot of great stuff in here...')
+            ->images(asset('assets/images/meta.png')
+            );
+
         return view('services.commercial');
     }
 
     public function industrialServices()
     {
+        seo()
+            ->title('Celeste Land Deals')
+            ->description('Theres really a lot of great stuff in here...')
+            ->images(asset('assets/images/meta.png')
+            );
+
         return view('services.industrial');
     }
 
     public function blogs()
     {
+        seo()
+            ->title('Celeste Land Deals')
+            ->description('Theres really a lot of great stuff in here...')
+            ->images(asset('assets/images/meta.png')
+            );
         $blogs = Blog::latest()->get();
 
         return view('blogs.index', compact('blogs'));
@@ -95,6 +141,11 @@ class WebsiteController extends Controller
 
     public function blogDetails($slug)
     {
+        seo()
+            ->title('Celeste Land Deals')
+            ->description('Theres really a lot of great stuff in here...')
+            ->images(asset('assets/images/meta.png')
+            );
         $blog = Blog::where('slug', $slug)->firstOrFail();
 
         return view('blogs.details', compact('blog'));
@@ -102,6 +153,12 @@ class WebsiteController extends Controller
 
     public function contact()
     {
+        seo()
+            ->title('Celeste Land Deals')
+            ->description('Theres really a lot of great stuff in here...')
+            ->images(asset('assets/images/meta.png')
+            );
+
         return view('contact');
     }
 }

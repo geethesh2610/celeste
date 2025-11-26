@@ -59,7 +59,7 @@
                     {{-- EMPTY STATE --}}
                     <div class="col-span-3 text-center py-[10vw] md:py-[4vw]">
                         <p class="font-satoshi text28px-desktop text-[#4A4A4A] font-medium">
-                            No plots available in this category.
+                            No blogs available.
                         </p>
                     </div>
                 @endforelse
