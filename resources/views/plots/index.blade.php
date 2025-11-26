@@ -60,12 +60,14 @@
                                     </p>
 
                                     {{-- PRICE --}}
-                                    <p class="font-satoshi text16px-mobile text20px-desktop leading-[1.45] text-[#595959] font-medium mt-[2.093vw] md:mt-[0.521vw] 3xl:mt-[0.495vw]">
-                                        From
-                                        <span class="text-[#15A1D2] font-bold">
-                                            {{ $plot->price }}
-                                        </span>
-                                    </p>
+                                    @if (!empty($plot->price))
+                                        <p class="font-satoshi text16px-mobile text20px-desktop leading-[1.45] text-[#595959] font-medium mt-[2.093vw] md:mt-[0.521vw] 3xl:mt-[0.495vw]">
+                                            From
+                                            <span class="text-[#15A1D2] font-bold">
+                                                {{ $plot->price }}
+                                            </span>
+                                        </p>
+                                    @endif
 
                                     {{-- EXPLORE BUTTON --}}
                                     <a href="{{ route('plots.details', ['categorySlug' => $plot->category, 'plotSlug' => $plot->slug]) }}" class="bg-[#ECE9E5] w-max mt-[8.372vw] md:mt-[3.472vw] 3xl:mt-[3.299vw] border border-[#1D1D1D] rounded-[1.395vw] md:rounded-[0.347vw] 3xl:rounded-[0.330vw] flex items-center gap-[5.581vw] md:gap-[1.389vw] 3xl:gap-[1.319vw] px-[4.186vw] md:px-[1.042vw] 3xl:px-[0.990vw] py-[2.791vw] md:py-[0.694vw] 3xl:py-[0.660vw] group duration-300 hover:bg-[#1D1D1D]">
@@ -85,22 +87,25 @@
                             <div class="w-[34.26%]">
                                 <div class="flex flex-col pl-[2.791vw] md:pl-[0.694vw] 3xl:pl-[0.660vw] py-[3.488vw] md:py-[1.620vw] 3xl:py-[1.539vw]">
 
-                                    {{-- PLOT SIZE --}}
-                                    <div class="relative pb-[5.581vw] md:pb-[1.389vw] 3xl:pb-[1.319vw] border-b border-[#6B6B6B] border-dashed">
-                                        <p class="font-satoshi text16px-desktop font-bold leading-[1.125]">Plot size</p>
-                                        <p class="text-[#595959] font-satoshi font-medium text22px-desktop leading-[1.31] mt-[2.326vw] md:mt-[0.579vw] 3xl:mt-[0.550vw]">
-                                            {{ $plot->plot_size }}
-                                        </p>
-                                    </div>
+                                    @if (!empty($plot->plot_size))
+                                        {{-- PLOT SIZE --}}
+                                        <div class="relative pb-[5.581vw] md:pb-[1.389vw] 3xl:pb-[1.319vw] border-b border-[#6B6B6B] border-dashed">
+                                            <p class="font-satoshi text16px-desktop font-bold leading-[1.125]">Plot size</p>
+                                            <p class="text-[#595959] font-satoshi font-medium text22px-desktop leading-[1.31] mt-[2.326vw] md:mt-[0.579vw] 3xl:mt-[0.550vw]">
+                                                {{ $plot->plot_size }}
+                                            </p>
+                                        </div>
+                                    @endif
 
-                                    {{-- ZONING --}}
-                                    <div class="relative pt-[5.581vw] md:pt-[1.389vw] 3xl:pt-[1.319vw]">
-                                        <p class="font-satoshi text16px-desktop font-bold leading-[1.125]">Zoning</p>
-                                        <p class="text-[#595959] font-satoshi font-medium text22px-desktop leading-[1.31] mt-[2.326vw] md:mt-[0.579vw] 3xl:mt-[0.550vw]">
-                                            {{ strtoupper($plot->zoning) }}
-                                        </p>
-                                    </div>
-
+                                    @if (!empty($plot->zoning))
+                                        {{-- ZONING --}}
+                                        <div class="relative pt-[5.581vw] md:pt-[1.389vw] 3xl:pt-[1.319vw]">
+                                            <p class="font-satoshi text16px-desktop font-bold leading-[1.125]">Zoning</p>
+                                            <p class="text-[#595959] font-satoshi font-medium text22px-desktop leading-[1.31] mt-[2.326vw] md:mt-[0.579vw] 3xl:mt-[0.550vw]">
+                                                {{ strtoupper($plot->zoning) }}
+                                            </p>
+                                        </div>
+                                    @endif
                                 </div>
                             </div>
 
