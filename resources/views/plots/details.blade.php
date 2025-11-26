@@ -99,8 +99,12 @@
                         </div>
 
                         {{-- Buttons --}}
+                        @php
+                            $phone = '971569988333';
+                            $message = 'Hi, I want to enquire about the property: ' . $plot->title;
+                        @endphp
                         <div class="mt-[14.465vw] md:mt-[7.581vw] 3xl:mt-[7.202vw] flex flex-col md:flex-row gap-[2.651vw] md:gap-[1.157vw] 3xl:gap-[1.100vw]">
-                            <a href="#" class="bg-[#1D1D1D] border border-[#1D1D1D] rounded-[1.395vw] md:rounded-[0.347vw] 3xl:rounded-[0.330vw] flex items-center justify-center gap-[2.791vw] md:gap-[0.694vw] 3xl:gap-[0.660vw] px-[23.256vw] md:px-[5.787vw] 3xl:px-[5.498vw] py-[4.884vw] md:py-[1.215vw] 3xl:py-[1.155vw] group duration-300 transition-colors hover:bg-white">
+                            <a href="https://wa.me/{{ $phone }}?text={{ urlencode($message) }}" target="_blank" class="bg-[#1D1D1D] border border-[#1D1D1D] rounded-[1.395vw] md:rounded-[0.347vw] 3xl:rounded-[0.330vw] flex items-center justify-center gap-[2.791vw] md:gap-[0.694vw] 3xl:gap-[0.660vw] px-[23.256vw] md:px-[5.787vw] 3xl:px-[5.498vw] py-[4.884vw] md:py-[1.215vw] 3xl:py-[1.155vw] group duration-300 transition-colors hover:bg-white">
                                 <p class="font-satoshi font-medium text20px-desktop text-white duration-300 transition-colors group-hover:text-[#1D1D1D]">Enquire Now</p>
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="text-[#00A7E1] h-auto w-[3.766vw] md:w-[0.937vw] 3xl:w-[0.890vw] duration-300 group-hover:rotate-45" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.6787 12.0643L13.466 12.0505L12.2238 11.9711L12.0366 11.9593V3.00585L1.44659 13.5959L0.283039 12.4323L10.8738 1.84161H2.10674L1.9196 1.8423L1.90717 1.65448L1.82845 0.412898L1.81464 0.200213L2.02802 0.199523H13.6787V12.0643Z" fill="currentColor" stroke="currentColor" stroke-width="0.4" />

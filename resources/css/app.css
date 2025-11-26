@@ -125,6 +125,10 @@
 /* ========================================= */
 
 @layer utilities {
+    .text16px-desktop {
+        @apply md:!text-[0.926vw] 3xl:!text-[0.880vw];
+    }
+
     .text18px-desktop {
         @apply md:!text-[1.042vw] 3xl:!text-[0.990vw];
     }
