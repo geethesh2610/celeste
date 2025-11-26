@@ -8,6 +8,13 @@ class WebsiteController extends Controller
 {
     public function index()
     {
+        seo()
+            ->title('Celeste Lan Deals')
+            ->description('Theres really a lot of great stuff in here...')
+            ->images(
+                'https://mywebsite.com/images/blog-1/cover-image.webp',
+            );
+
         $blogs = Blog::latest()->take(3)->get();
 
         return view('welcome', compact('blogs'));

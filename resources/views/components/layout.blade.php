@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    @metadata
 
     @stack('style')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -25,7 +25,7 @@
     </div>
 
     @stack('script')
-@livewireScripts
+    @livewireScripts
 </body>
 
 </html>
