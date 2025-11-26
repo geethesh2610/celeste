@@ -9,6 +9,7 @@
 
     @stack('style')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireStyles
 </head>
 
 <body class="antialiased leading-none">
@@ -24,6 +25,7 @@
     </div>
 
     @stack('script')
+@livewireScripts
 </body>
 
 </html>
