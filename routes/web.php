@@ -4,7 +4,7 @@ use App\Http\Controllers\WebsiteController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Auth::loginUsingId(1);
+//Auth::loginUsingId(1);
 
 Route::get('/', [WebsiteController::class, 'index'])->name('index');
 
