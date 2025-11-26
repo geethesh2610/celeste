@@ -1,0 +1,77 @@
+{
+  "public/assets/fonts/satoshi/Satoshi-Bold.ttf": {
+    "file": "assets/Satoshi-Bold-CPly9kH5.ttf",
+    "src": "public/assets/fonts/satoshi/Satoshi-Bold.ttf"
+  },
+  "public/assets/fonts/satoshi/Satoshi-Bold.woff": {
+    "file": "assets/Satoshi-Bold-C2PhLWFc.woff",
+    "src": "public/assets/fonts/satoshi/Satoshi-Bold.woff"
+  },
+  "public/assets/fonts/satoshi/Satoshi-Bold.woff2": {
+    "file": "assets/Satoshi-Bold-Bd5kKQ_U.woff2",
+    "src": "public/assets/fonts/satoshi/Satoshi-Bold.woff2"
+  },
+  "public/assets/fonts/satoshi/Satoshi-Medium.ttf": {
+    "file": "assets/Satoshi-Medium-DOt9kM-a.ttf",
+    "src": "public/assets/fonts/satoshi/Satoshi-Medium.ttf"
+  },
+  "public/assets/fonts/satoshi/Satoshi-Medium.woff": {
+    "file": "assets/Satoshi-Medium-DDwDPeBg.woff",
+    "src": "public/assets/fonts/satoshi/Satoshi-Medium.woff"
+  },
+  "public/assets/fonts/satoshi/Satoshi-Medium.woff2": {
+    "file": "assets/Satoshi-Medium-ByP-Zb-9.woff2",
+    "src": "public/assets/fonts/satoshi/Satoshi-Medium.woff2"
+  },
+  "public/assets/fonts/satoshi/Satoshi-Regular.ttf": {
+    "file": "assets/Satoshi-Regular-DToFXog2.ttf",
+    "src": "public/assets/fonts/satoshi/Satoshi-Regular.ttf"
+  },
+  "public/assets/fonts/satoshi/Satoshi-Regular.woff": {
+    "file": "assets/Satoshi-Regular-CWSyEjGv.woff",
+    "src": "public/assets/fonts/satoshi/Satoshi-Regular.woff"
+  },
+  "public/assets/fonts/satoshi/Satoshi-Regular.woff2": {
+    "file": "assets/Satoshi-Regular-CPM9dct4.woff2",
+    "src": "public/assets/fonts/satoshi/Satoshi-Regular.woff2"
+  },
+  "public/assets/fonts/uncut/UncutSans-Medium.woff": {
+    "file": "assets/UncutSans-Medium-Jr5sNmY1.woff",
+    "src": "public/assets/fonts/uncut/UncutSans-Medium.woff"
+  },
+  "public/assets/fonts/uncut/UncutSans-Medium.woff2": {
+    "file": "assets/UncutSans-Medium-Bf9hL10-.woff2",
+    "src": "public/assets/fonts/uncut/UncutSans-Medium.woff2"
+  },
+  "public/assets/fonts/uncut/UncutSans-Regular.woff": {
+    "file": "assets/UncutSans-Regular-CBWWG6i7.woff",
+    "src": "public/assets/fonts/uncut/UncutSans-Regular.woff"
+  },
+  "public/assets/fonts/uncut/UncutSans-Regular.woff2": {
+    "file": "assets/UncutSans-Regular-BgLMakaz.woff2",
+    "src": "public/assets/fonts/uncut/UncutSans-Regular.woff2"
+  },
+  "public/assets/fonts/uncut/UncutSans-Semibold.woff": {
+    "file": "assets/UncutSans-Semibold-B_K-TLzY.woff",
+    "src": "public/assets/fonts/uncut/UncutSans-Semibold.woff"
+  },
+  "public/assets/fonts/uncut/UncutSans-Semibold.woff2": {
+    "file": "assets/UncutSans-Semibold-B0cSdemO.woff2",
+    "src": "public/assets/fonts/uncut/UncutSans-Semibold.woff2"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-CLiD-okz.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-Cersxp9L.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
