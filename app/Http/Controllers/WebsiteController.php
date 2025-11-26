@@ -10,7 +10,7 @@ class WebsiteController extends Controller
     {
         seo()
             ->title('Celeste Land Deals')
-            ->description('Theres really a lot of great stuff in here...')
+            ->description('Celeste is a global real estate company headquartered in Dubai, with a strategic operations hub in Bangalore, India. Our strength lies in one simple idea: every piece of land holds potential—our job is to unlock it.')
             ->images(asset('assets/images/meta.png')
             );
 
@@ -23,7 +23,7 @@ class WebsiteController extends Controller
     {
         seo()
             ->title('Celeste Land Deals')
-            ->description('Theres really a lot of great stuff in here...')
+            ->description('Celeste is a global real estate company headquartered in Dubai, with a strategic operations hub in Bangalore, India. Our strength lies in one simple idea: every piece of land holds potential—our job is to unlock it.')
             ->images(asset('assets/images/meta.png')
             );
 
@@ -34,7 +34,7 @@ class WebsiteController extends Controller
     {
         seo()
             ->title('Celeste Land Deals')
-            ->description('Theres really a lot of great stuff in here...')
+            ->description('Celeste is a global real estate company headquartered in Dubai, with a strategic operations hub in Bangalore, India. Our strength lies in one simple idea: every piece of land holds potential—our job is to unlock it.')
             ->images(asset('assets/images/meta.png')
             );
 
@@ -64,7 +64,7 @@ class WebsiteController extends Controller
     {
         seo()
             ->title('Celeste Land Deals')
-            ->description('Theres really a lot of great stuff in here...')
+            ->description('Celeste is a global real estate company headquartered in Dubai, with a strategic operations hub in Bangalore, India. Our strength lies in one simple idea: every piece of land holds potential—our job is to unlock it.')
             ->images(asset('assets/images/meta.png')
             );
 
@@ -87,7 +87,7 @@ class WebsiteController extends Controller
     {
         seo()
             ->title('Celeste Land Deals')
-            ->description('Theres really a lot of great stuff in here...')
+            ->description('Celeste is a global real estate company headquartered in Dubai, with a strategic operations hub in Bangalore, India. Our strength lies in one simple idea: every piece of land holds potential—our job is to unlock it.')
             ->images(asset('assets/images/meta.png')
             );
 
@@ -98,7 +98,7 @@ class WebsiteController extends Controller
     {
         seo()
             ->title('Celeste Land Deals')
-            ->description('Theres really a lot of great stuff in here...')
+            ->description('Celeste is a global real estate company headquartered in Dubai, with a strategic operations hub in Bangalore, India. Our strength lies in one simple idea: every piece of land holds potential—our job is to unlock it.')
             ->images(asset('assets/images/meta.png')
             );
 
@@ -109,7 +109,7 @@ class WebsiteController extends Controller
     {
         seo()
             ->title('Celeste Land Deals')
-            ->description('Theres really a lot of great stuff in here...')
+            ->description('Celeste is a global real estate company headquartered in Dubai, with a strategic operations hub in Bangalore, India. Our strength lies in one simple idea: every piece of land holds potential—our job is to unlock it.')
             ->images(asset('assets/images/meta.png')
             );
 
@@ -120,7 +120,7 @@ class WebsiteController extends Controller
     {
         seo()
             ->title('Celeste Land Deals')
-            ->description('Theres really a lot of great stuff in here...')
+            ->description('Celeste is a global real estate company headquartered in Dubai, with a strategic operations hub in Bangalore, India. Our strength lies in one simple idea: every piece of land holds potential—our job is to unlock it.')
             ->images(asset('assets/images/meta.png')
             );
 
@@ -131,7 +131,7 @@ class WebsiteController extends Controller
     {
         seo()
             ->title('Celeste Land Deals')
-            ->description('Theres really a lot of great stuff in here...')
+            ->description('Celeste is a global real estate company headquartered in Dubai, with a strategic operations hub in Bangalore, India. Our strength lies in one simple idea: every piece of land holds potential—our job is to unlock it.')
             ->images(asset('assets/images/meta.png')
             );
         $blogs = Blog::latest()->get();
@@ -143,7 +143,7 @@ class WebsiteController extends Controller
     {
         seo()
             ->title('Celeste Land Deals')
-            ->description('Theres really a lot of great stuff in here...')
+            ->description('Celeste is a global real estate company headquartered in Dubai, with a strategic operations hub in Bangalore, India. Our strength lies in one simple idea: every piece of land holds potential—our job is to unlock it.')
             ->images(asset('assets/images/meta.png')
             );
         $blog = Blog::where('slug', $slug)->firstOrFail();
@@ -155,7 +155,7 @@ class WebsiteController extends Controller
     {
         seo()
             ->title('Celeste Land Deals')
-            ->description('Theres really a lot of great stuff in here...')
+            ->description('Celeste is a global real estate company headquartered in Dubai, with a strategic operations hub in Bangalore, India. Our strength lies in one simple idea: every piece of land holds potential—our job is to unlock it.')
             ->images(asset('assets/images/meta.png')
             );
 
