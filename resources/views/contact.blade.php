@@ -30,7 +30,7 @@
                             <div class="relative">
                                 <p class="font-satoshi text20px-desktop font-medium">DUBAI</p>
                                 <div class="mt-[3.256vw] md:mt-[0.810vw] 3xl:mt-[0.770vw] space-y-[2.326vw] md:space-y-[0.579vw] 3xl:space-y-[0.550vw]">
-                                    <a href="" target="_blank" class="text-[#ECECEC] font-satoshi text18px-desktop leading-[1.38] font-medium inline-block">
+                                    <a href="https://maps.app.goo.gl/1ys38eMiZhUxRVo47" target="_blank" class="text-[#ECECEC] font-satoshi text18px-desktop leading-[1.38] font-medium inline-block">
                                         Celeste International Properties LLC<br>
                                         Office No:53
                                         Oasis Mall, Sheikh Zayed Road, Al Quoz 1, Dubai.UAE

@@ -28,9 +28,9 @@
                 <div class="flex items-center gap-[1vw] font-satoshi font-medium text-[#EBEBEB] font-bold text15px-mobile text18px-desktop leading-[1.61]">
                     <p class="text-[#EBEBEB] transition text-white">Services</p>
                     <p>></p>
-                    <p>Residential Services</p>
+                    <p>Residential Advisory Services</p>
                 </div>
-                <h1 class="font-uncut font-medium text56px-mobile  text-white text160px-desktop leading-[.9375] mt-[4.163vw] md:mt-[2.778vw] 3xl:mt-[2.639vw]">Residential<br>Services</h1>
+                <h1 class="font-uncut font-medium text56px-mobile  text-white text160px-desktop leading-[.9375] mt-[4.163vw] md:mt-[2.778vw] 3xl:mt-[2.639vw]">Residential Advisory<br>Services</h1>
             </div>
         </div>
     </section>
@@ -47,7 +47,7 @@
                     </div>
                     <h2 data-animate-heading class="flex flex-col font-uncut font-medium text40px-mobile text72px-desktop leading-[1.08] -tracking-[0.326vw] md:-tracking-[0.081vw] 3xl:-tracking-[0.077vw]">
                         <span class="inline-block will-change-transform">Explore our</span>
-                        <span class="inline-block will-change-transform">Residential services </span>
+                        <span class="inline-block will-change-transform">Residential advisory services </span>
                     </h2>
 
                     <div class="mt-[6.279vw] md:mt-[4.051vw] 3xl:mt-[3.848vw] w-max hidden md:block">

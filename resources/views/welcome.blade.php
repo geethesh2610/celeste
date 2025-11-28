@@ -10,15 +10,15 @@
                 <div class="flex flex-col justify-between h-full">
                     <h1 class="hero-heading relative z-0 hidden md:flex flex-col font-uncut font-medium text56px-mobile text120px-desktop text-white leading-[.975] md:-tracking-[0.347vw] 3xl:-tracking-[0.330vw]">
                         <span class="inline-block">20 Years of Shaping</span>
-                        <span class="inline-block">Dubai's Landscape</span>
+                        <span class="inline-block">UAE’s Future</span>
                     </h1>
                     <h1 class="hero-heading relative z-0 md:hidden flex flex-col font-uncut font-medium text56px-mobile text120px-desktop text-white leading-[.975] -tracking-[0.651vw] md:-tracking-[0.347vw] 3xl:-tracking-[0.330vw]">
                         <span class="inline-block">20 Years of</span>
-                        <span class="inline-block">Shaping Dubai's</span>
-                        <span class="inline-block">Landscape</span>
+                        <span class="inline-block">Shaping UAE’s</span>
+                        <span class="inline-block">Future</span>
                     </h1>
 
-                    <div class="hero-offerings relative z-2 flex flex-col gap-[3.256vw] md:gap-[1.389vw] 3xl:gap-[1.319vw] w-full md:w-[30.787vw] 3xl:w-[29.248vw] mt-[111.628vw] md:mt-[8.681vw] 3xl:mt-[8.247vw]">
+                    <div class="invisible hero-offerings relative z-2 flex flex-col gap-[3.256vw] md:gap-[1.389vw] 3xl:gap-[1.319vw] w-full md:w-[30.787vw] 3xl:w-[29.248vw] mt-[111.628vw] md:mt-[8.681vw] 3xl:mt-[8.247vw]">
                         <div class="flex items-center gap-[1.628vw] md:gap-[0.405vw] 3xl:gap-[0.385vw]">
                             <img src="{{ secure_asset('assets/images/home/celeste-white-logo.png') }}" class="h-auto w-[4.186vw] md:w-[1.678vw] 3xl:w-[1.594vw]" alt="">
                             <p class="font-uncut font-semibold text-white text20px-mobile text26px-desktop leading-[1.15]">Our Offerings</p>
@@ -26,7 +26,7 @@
                         <p class="font-satoshi text-white font-medium leading-[1.46] md:leading-[1.4] text15px-mobile text22px-desktop -tracking-[0.051vw] md:-tracking-[0.013vw] 3xl:-tracking-[0.012vw]">With interest rates as low as 9.50% for bridge financing and 6.50% for 30 year loans, we offer solutions tailored to your investment financing needs.</p>
                     </div>
                 </div>
-                <div class="h-full pointer-events-none absolute flex justify-end items-start md:justify-start md:items-start bottom-0 right-[4.651vw] md:right-0 md:relative z-0 pt-[80vw] md:pt-[12.153vw] 3xl:pt-[11.545vw] w-full md:w-auto">
+                <div class="h-full pointer-events-none absolute flex justify-end items-start md:justify-start md:items-start bottom-0 right-[4.651vw] md:right-0 md:relative z-0 pt-[80vw] md:pt-[10.153vw] 3xl:pt-[9.545vw] w-full md:w-auto">
                     <div class="hero-white-card  bg-[#FFFFFF] w-[61.395vw] md:w-[22.454vw] 3xl:w-[21.331vw] h-[66.977vw] md:h-[23.843vw] 3xl:h-[22.650vw] p-[3.488vw] md:p-[1.389vw] 3xl:p-[1.319vw] rounded-[1.395vw] md:rounded-[0.347vw] 3xl:rounded-[0.330vw]">
                         <div class="flex justify-end">
                             <img src="{{ secure_asset('assets/images/home/celeste-color-logo.png') }}" class="w-[10.930vw] md:w-[3.588vw] 3xl:w-[3.409vw] h-auto" alt="">
@@ -153,7 +153,7 @@
                             <p class="font-satoshi text60px-mobile text160px-desktop leading-[1.14] md:leading-none text-[#1D1D1D] font-bold"><span>02</span></p>
                         </div>
                         <div class="border-t border-[#6B6B6B] border-dashed py-[3.023vw] md:py-[1.273vw] 3xl:py-[1.209vw] px-[5.349vw] md:px-[1.331vw] 3xl:px-[1.264vw] mt-0 md:mt-[9.664vw] 3xl:mt-[9.181vw] z-1">
-                            <p class="font-satoshi font-bold text14px-mobile text20px-desktop text-[#1D1D1D]">We sell properties in 2 localities</p>
+                            <p class="font-satoshi font-bold text14px-mobile text20px-desktop text-[#1D1D1D]">We sell properties in 2 countries</p>
                         </div>
                     </div>
                 </div>
@@ -270,7 +270,7 @@
                             <p class="font-satoshi text60px-mobile text160px-desktop leading-[1.14] md:leading-none text-white font-bold"><span>400</span>+</p>
                         </div>
                         <div class="border-t border-white border-dashed py-[3.023vw] md:py-[1.273vw] 3xl:py-[1.209vw] px-[5.349vw] md:px-[1.331vw] 3xl:px-[1.264vw] mt-0 md:mt-[9.664vw] 3xl:mt-[9.181vw] z-1">
-                            <p class="font-satoshi font-bold text14px-mobile text20px-desktop text-white">Happy customers</p>
+                            <p class="font-satoshi font-bold text14px-mobile text20px-desktop text-white">Commercial and industrial projects sold</p>
                         </div>
                     </div>
                 </div>
@@ -297,7 +297,7 @@
                 </div>
                 <h2 data-animate-heading class="flex flex-col font-uncut font-medium text40px-mobile text72px-desktop leading-[1.08] -tracking-[0.326vw] md:-tracking-[0.081vw] 3xl:-tracking-[0.077vw]">
                     <span class="inline-block will-change-transform">Specialists</span>
-                    <span class="inline-block will-change-transform">in Land Real Estate</span>
+                    <span class="inline-block will-change-transform">in Land Sales</span>
                 </h2>
             </div>
 
@@ -307,7 +307,7 @@
                         [
                             'number' => '01',
                             'title' => 'Residential Plots',
-                            'description' => 'Our services are designed to simplify complex decisions and empower informed investments.',
+                            'description' => 'Curated residential land in high-growth zones, selected to offer strong appreciation and long-term value. We guide you with clear insights so you can invest with confidence.',
                             'image' => secure_asset('assets/images/home/expertise-1.png'),
                             'route' => 'plots.index',
                             'slug' => 'residential',
@@ -315,7 +315,7 @@
                         [
                             'number' => '02',
                             'title' => 'Commercial Plots',
-                            'description' => 'Offering in-depth research, valuation, and strategy to guide high-value land acquisitions.',
+                            'description' => 'Strategic commercial and industrial land opportunities backed by research, valuation, and market intelligence to support high-impact developments.',
                             'image' => secure_asset('assets/images/home/expertise-2.png'),
                             'route' => 'plots.index',
                             'slug' => 'commercial',
@@ -323,7 +323,7 @@
                         [
                             'number' => '03',
                             'title' => 'Industrial and Logistic Projects',
-                            'description' => 'Collaborating with developers and investors to shape Dubai’s future communities.',
+                            'description' => 'High-value industrial and logistics land across the UAE, selected for strong infrastructure access and long-term commercial potential.',
                             'image' => secure_asset('assets/images/home/expertise-3.png'),
                             'route' => 'plots.index',
                             'slug' => 'industrial-projects',
@@ -331,8 +331,8 @@
                         [
                             'number' => '04',
                             'title' => 'Offplan Projects',
-                            'description' => 'Collaborating with developers and investors to shape Dubai’s future communities.',
-                            'image' => secure_asset('assets/images/home/expertise-1.png'),
+                            'description' => 'A curated portfolio of offplan communities and developments across the UAE, offering early-stage access to high-growth investment zones.',
+                            'image' => secure_asset('assets/images/home/offplan.jpg'),
                             'route' => 'plots.index',
                             'slug' => 'offplan-projects',
                         ],
@@ -369,7 +369,7 @@
                                 </div>
 
                                 <div class="relative w-full md:w-[24.537vw] 3xl:w-[23.310vw]">
-                                    <img src="{{ $plot['image'] }}" class="w-full h-auto object-cover" alt="">
+                                    <img src="{{ $plot['image'] }}" class="w-full h-full object-cover aspect-[1.35/1]" alt="">
                                 </div>
                             </div>
                         </div>
@@ -405,7 +405,7 @@
                 </div>
 
                 @php
-                    $developers = ['damac.png', 'emirates.png', 'nakheel.png', 'emaar.png', 'mag.png', 'omniyat.png'];
+                    $developers = ['damac.png', 'emiratess.png', 'nakheel.png', 'emaar.png', 'mag.png', 'omniyat.png'];
                 @endphp
                 <div class="flex-1 grid grid-cols-3 gap-[3.953vw] md:gap-[2.488vw] 3xl:gap-[2.364vw]">
                     @foreach ($developers as $dev)

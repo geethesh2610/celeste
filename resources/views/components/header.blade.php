@@ -2,7 +2,7 @@
     <div class="px-[4.651vw] md:px-[1.852vw] 3xl:px-[1.759vw] py-[5.581vw] md:py-[1.389vw] 3xl:py-[1.319vw]">
         <div class="flex items-center justify-between relative z-1">
             <a href="{{ route('index') }}">
-                <img src="{{ secure_asset('assets/images/header/logo.png') }}" data-logo-dark="{{ secure_asset('assets/images/header/logo.png') }}" data-logo-light="{{ secure_asset('assets/images/header/logo-color.png') }}" class="w-[35.581vw] md:w-[14.063vw] 3xl:w-[13.359vw] h-auto transition-all duration-300 header-logo" alt="">
+                <img src="{{ secure_asset('assets/images/header/cel-logo.png') }}" data-logo-dark="{{ secure_asset('assets/images/header/cel-logo.png') }}" data-logo-light="{{ secure_asset('assets/images/header/cel-logo.png') }}" class="w-[35.581vw] md:w-[14.063vw] 3xl:w-[13.359vw] h-auto transition-all duration-300 header-logo" alt="">
             </a>
 
             @php
@@ -22,7 +22,7 @@
                     [
                         'label' => 'Services',
                         'route' => 'services.index',
-                        'dropdown' => [['label' => 'Residential Services', 'route' => 'services.residential'], ['label' => 'Commercial Service', 'route' => 'services.commercial'], ['label' => 'Industrial & Logistics Services', 'route' => 'services.industrial-logistics']],
+                        'dropdown' => [['label' => 'Residential Advisory Services', 'route' => 'services.residential'], ['label' => 'Commercial Advisory Services', 'route' => 'services.commercial'], ['label' => 'Industrial & Logistics Advisory Services', 'route' => 'services.industrial-logistics']],
                     ],
 
                     ['label' => 'Contact', 'route' => 'contact'],

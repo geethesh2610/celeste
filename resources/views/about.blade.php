@@ -19,18 +19,18 @@
                     <p class="uppercase font-satoshi text-[#1D1D1D] font-bold text18px-desktop">Pride in Every Promise</p>
                 </div>
                 <h2 data-animate-heading class="hidden md:flex flex-col font-uncut font-medium text40px-mobile text72px-desktop leading-[1.08] -tracking-[0.326vw] md:-tracking-[0.081vw] 3xl:-tracking-[0.077vw]">
-                    <span class="inline-block will-change-transform">Two Decades of Land Real </span>
-                    <span class="inline-block will-change-transform">Estate Expertise</span>
+                    <span class="inline-block will-change-transform">Two Decades of Land and </span>
+                    <span class="inline-block will-change-transform">Real Estate Expertise</span>
                 </h2>
                 <h2 data-animate-heading class="md:hidden flex flex-col font-uncut font-medium text40px-mobile text72px-desktop leading-[1.08] -tracking-[0.326vw] md:-tracking-[0.081vw] 3xl:-tracking-[0.077vw]">
-                    <span class="inline-block will-change-transform">Two Decades of Land</span>
+                    <span class="inline-block will-change-transform">Two Decades of Land and</span>
                     <span class="inline-block will-change-transform">Real Estate Expertise</span>
                 </h2>
 
                 <div class=" w-full md:w-[41.088vw] 3xl:w-[39.034vw] mt-[9.302vw] md:mt-[2.315vw] 3xl:mt-[2.199vw] space-y-[4.186vw] md:space-y-[1.042vw] 3xl:space-y-[0.990vw]">
-                    <p class="font-satoshi font-medium text-[#3E3E3E] text15px-mobile text22px-desktop leading-[1.40]">Celeste is a global real estate company headquartered in Dubai, with a strategic operations hub in Bangalore, India. Our strength lies in one simple idea: every piece of land holds potential—our job is to unlock it.</p>
-                    <p class="font-satoshi font-medium text-[#3E3E3E] text15px-mobile text22px-desktop leading-[1.40]">From premium residential plots to expansive community developments and high-value industrial lands, we specialize in identifying and delivering assets that grow in value, stand the test of time, and build generational wealth.</p>
-                    <p class="font-satoshi font-medium text-[#3E3E3E] text15px-mobile text22px-desktop leading-[1.40]">Our team brings decades of experience across construction, land development, investment advisory, and large-scale project strategy—allowing us to guide clients with clarity, precision, and confidence in every decision.</p>
+                    <p class="font-satoshi font-medium text-[#3E3E3E] text15px-mobile text22px-desktop leading-[1.40]">Celeste is a global real estate company headquartered in the UAE, supported by a strategic operations hub in Bangalore, India. We believe every piece of land carries potential — and our work is to unlock that value with precision.</p>
+                    <p class="font-satoshi font-medium text-[#3E3E3E] text15px-mobile text22px-desktop leading-[1.40]">We specialize in high-growth land opportunities across the UAE and India, covering premium residential plots, large community developments, and high-value industrial corridors. Our focus is on identifying assets that appreciate steadily, stay resilient over time, and help build generational wealth.</p>
+                    <p class="font-satoshi font-medium text-[#3E3E3E] text15px-mobile text22px-desktop leading-[1.40]">With decades of experience in construction, land development, investment advisory, and large-scale project strategy, our team guides clients with clarity, accuracy, and confidence at every step.</p>
                 </div>
             </div>
 

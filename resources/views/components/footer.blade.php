@@ -84,9 +84,19 @@
 
                     <ul class="mt-[5.581vw] md:mt-[1.389vw] 3xl:mt-[1.319vw] space-y-[2.326vw] md:space-y-[0.579vw] 3xl:space-y-[0.550vw]">
                         <li>
-                            <a href="https://maps.app.goo.gl/1ys38eMiZhUxRVo47" class="text-[#737373] font-satoshi font-medium text15px-mobile text18px-desktop leading-[1.33]">Celeste International Properties LLC<br>
+                            <a href="https://maps.app.goo.gl/1ys38eMiZhUxRVo47" target="_blank" class="text-[#737373] font-satoshi font-medium text15px-mobile text18px-desktop leading-[1.33]">
+                                <span class="font-bold">Dubai</span><br>
+                                Celeste International Properties LLC<br>
                                 Office No:53
                                 Oasis Mall, Sheikh Zayed Road, Al Quoz 1, Dubai.UAE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.app.goo.gl/1ys38eMiZhUxRVo47" target="_blank" class="text-[#737373] font-satoshi font-medium text15px-mobile text18px-desktop leading-[1.33]">
+                                <span class="font-bold">India</span><br>
+                                #442, 3rd Floor, 5th Main, 6th Ave St,<br>
+                                Teacher's Colony, Koramangala, Bengaluru,<br>
+                                Karnataka 560034, India
                             </a>
                         </li>
 

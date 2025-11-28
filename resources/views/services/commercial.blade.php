@@ -28,9 +28,9 @@
                 <div class="flex items-center gap-[1vw] font-satoshi font-medium text-[#EBEBEB] font-bold text15px-mobile text18px-desktop leading-[1.61]">
                     <p class="text-[#EBEBEB] transition text-white">Services</p>
                     <p>></p>
-                    <p>Commercial Services</p>
+                    <p>Commercial Advisory Services</p>
                 </div>
-                <h1 class="font-uncut font-medium text56px-mobile  text-white text160px-desktop leading-[.9375] mt-[4.163vw] md:mt-[2.778vw] 3xl:mt-[2.639vw]">Commercial<br>Services</h1>
+                <h1 class="font-uncut font-medium text56px-mobile  text-white text160px-desktop leading-[.9375] mt-[4.163vw] md:mt-[2.778vw] 3xl:mt-[2.639vw]">Commercial Advisory<br>Services</h1>
             </div>
         </div>
     </section>
@@ -47,12 +47,12 @@
                     </div>
                     <h2 data-animate-heading class="flex flex-col font-uncut font-medium text40px-mobile text72px-desktop leading-[1.08] -tracking-[0.326vw] md:-tracking-[0.081vw] 3xl:-tracking-[0.077vw]">
                         <span class="inline-block will-change-transform">Explore our</span>
-                        <span class="inline-block will-change-transform">Residential services </span>
+                        <span class="inline-block will-change-transform">Commercial advisory services </span>
                     </h2>
 
                     <div class="mt-[6.279vw] md:mt-[4.051vw] 3xl:mt-[3.848vw] w-max hidden md:block">
-                        <a href="{{ route('plots.index', 'residential') }}" class="bg-[#1D1D1D] border border-[#1D1D1D] rounded-[1.395vw] md:rounded-[0.347vw] 3xl:rounded-[0.330vw] flex items-center gap-[2.791vw] md:gap-[0.694vw] 3xl:gap-[0.660vw] px-[6.977vw] md:px-[1.736vw] 3xl:px-[1.649vw] py-[4.884vw] md:py-[1.215vw] 3xl:py-[1.155vw] group duration-300 transition-colors hover:bg-white">
-                            <p class="font-satoshi font-medium text20px-desktop text-white duration-300 transition-colors group-hover:text-[#1D1D1D]">See Residential Plots</p>
+                        <a href="{{ route('plots.index', 'commercial') }}" class="bg-[#1D1D1D] border border-[#1D1D1D] rounded-[1.395vw] md:rounded-[0.347vw] 3xl:rounded-[0.330vw] flex items-center gap-[2.791vw] md:gap-[0.694vw] 3xl:gap-[0.660vw] px-[6.977vw] md:px-[1.736vw] 3xl:px-[1.649vw] py-[4.884vw] md:py-[1.215vw] 3xl:py-[1.155vw] group duration-300 transition-colors hover:bg-white">
+                            <p class="font-satoshi font-medium text20px-desktop text-white duration-300 transition-colors group-hover:text-[#1D1D1D]">See Commercial Plots</p>
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="text-[#00A7E1] h-auto w-[3.766vw] md:w-[0.937vw] 3xl:w-[0.890vw] duration-300 group-hover:rotate-45" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13.6787 12.0643L13.466 12.0505L12.2238 11.9711L12.0366 11.9593V3.00585L1.44659 13.5959L0.283039 12.4323L10.8738 1.84161H2.10674L1.9196 1.8423L1.90717 1.65448L1.82845 0.412898L1.81464 0.200213L2.02802 0.199523H13.6787V12.0643Z" fill="currentColor" stroke="currentColor" stroke-width="0.4" />
                             </svg>
@@ -62,8 +62,8 @@
                 <div class="md:w-[49.32%]">
                     <p class="font-satoshi font-medium text15px-mobile text-[#3E3E3E] text22px-desktop leading-[1.40] w-full md:w-[41.088vw] 3xl:w-[39.034vw]"> For institutional players, developers and strategic investors seeking high-impact land assets in Dubai, our commercial land offerings deliver premium zoning, strong infrastructure and long-term value. From retail malls to logistics hubs, hotel sites to master-planned mixed-use schemes — we cover the full spectrum of commercial land opportunities.</p>
                     <div class="mt-[9.279vw] md:mt-[4.051vw] 3xl:mt-[3.848vw] w-max md:hidden">
-                        <a href="{{ route('plots.index', 'residential') }}" class="bg-[#1D1D1D] border border-[#1D1D1D] rounded-[1.395vw] md:rounded-[0.347vw] 3xl:rounded-[0.330vw] flex items-center gap-[2.791vw] md:gap-[0.694vw] 3xl:gap-[0.660vw] px-[6.977vw] md:px-[1.736vw] 3xl:px-[1.649vw] py-[4.884vw] md:py-[1.215vw] 3xl:py-[1.155vw] group duration-300 transition-colors hover:bg-white">
-                            <p class="font-satoshi font-medium text20px-desktop text-white duration-300 transition-colors group-hover:text-[#1D1D1D]">See Residential Plots</p>
+                        <a href="{{ route('plots.index', 'commercial') }}" class="bg-[#1D1D1D] border border-[#1D1D1D] rounded-[1.395vw] md:rounded-[0.347vw] 3xl:rounded-[0.330vw] flex items-center gap-[2.791vw] md:gap-[0.694vw] 3xl:gap-[0.660vw] px-[6.977vw] md:px-[1.736vw] 3xl:px-[1.649vw] py-[4.884vw] md:py-[1.215vw] 3xl:py-[1.155vw] group duration-300 transition-colors hover:bg-white">
+                            <p class="font-satoshi font-medium text20px-desktop text-white duration-300 transition-colors group-hover:text-[#1D1D1D]">See Commercial Plots</p>
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" class="text-[#00A7E1] h-auto w-[3.766vw] md:w-[0.937vw] 3xl:w-[0.890vw] duration-300 group-hover:rotate-45" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13.6787 12.0643L13.466 12.0505L12.2238 11.9711L12.0366 11.9593V3.00585L1.44659 13.5959L0.283039 12.4323L10.8738 1.84161H2.10674L1.9196 1.8423L1.90717 1.65448L1.82845 0.412898L1.81464 0.200213L2.02802 0.199523H13.6787V12.0643Z" fill="currentColor" stroke="currentColor" stroke-width="0.4" />
                             </svg>

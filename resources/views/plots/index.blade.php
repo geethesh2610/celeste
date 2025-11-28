@@ -32,10 +32,10 @@
                 </div>
                 <h2 data-animate-heading="" class="flex flex-col font-uncut font-medium text40px-mobile text72px-desktop leading-[1.08] -tracking-[0.326vw] md:-tracking-[0.081vw] 3xl:-tracking-[0.077vw]">
                     <span class="inline-block will-change-transform">Explore Prime Land</span>
-                    <span class="inline-block will-change-transform">Opportunities Across Dubai</span>
+                    <span class="inline-block will-change-transform">Opportunities Across UAE</span>
                 </h2>
 
-                <p class="font-satoshi font-medium text-[#3E3E3E] text25px-mobile text22px-desktop leading-[1.40] w-full md:w-[41.088vw] 3xl:w-[39.034vw] mt-[5.581vw] md:mt-[2.315vw] 3xl:mt-[2.199vw]">Our curated listings feature strategically located plots ideal for residential, commercial, and mixed-use development.</p>
+                <p class="font-satoshi font-medium text-[#3E3E3E] text25px-mobile text22px-desktop leading-[1.40] w-full md:w-[41.088vw] 3xl:w-[39.034vw] mt-[5.581vw] md:mt-[2.315vw] 3xl:mt-[2.199vw]">Our curated listings feature well-located plots suited for residential, commercial, industrial, and mixed-use development.</p>
             </div>
 
 
