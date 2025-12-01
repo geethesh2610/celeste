@@ -3,7 +3,7 @@
     <div class="relative pt-[9.302vw] md:pt-[2.315vw] 3xl:pt-[2.199vw] z-1">
         <div class="flex flex-col md:flex-row md:justify-between px-[4.651vw] md:px-[1.736vw] 3xl:px-[1.649vw]">
             <a href="{{ route('index') }}">
-                <img src="{{ secure_asset('assets/images/header/logo-color.png') }}" class="w-[44.651vw] md:w-[11.111vw] 3xl:w-[10.556vw] h-auto" alt="">
+                <img src="{{ secure_asset('assets/images/header/cel-logo.png') }}" class="w-[44.651vw] md:w-[11.111vw] 3xl:w-[10.556vw] h-auto" alt="">
             </a>
 
             <div class="grid grid-cols-2 md:flex gap-[11.628vw] md:gap-[4.167vw] 3xl:gap-[3.958vw] mt-[14.884vw] md:mt-0">

@@ -26,7 +26,7 @@
                         <p class="font-satoshi text-white font-medium leading-[1.46] md:leading-[1.4] text15px-mobile text22px-desktop -tracking-[0.051vw] md:-tracking-[0.013vw] 3xl:-tracking-[0.012vw]">With interest rates as low as 9.50% for bridge financing and 6.50% for 30 year loans, we offer solutions tailored to your investment financing needs.</p>
                     </div>
                 </div>
-                <div class="h-full pointer-events-none absolute flex justify-end items-start md:justify-start md:items-start bottom-0 right-[4.651vw] md:right-0 md:relative z-0 pt-[80vw] md:pt-[10.153vw] 3xl:pt-[9.545vw] w-full md:w-auto">
+                <div class="invisible h-full pointer-events-none absolute flex justify-end items-start md:justify-start md:items-start bottom-0 right-[4.651vw] md:right-0 md:relative z-0 pt-[80vw] md:pt-[10.153vw] 3xl:pt-[9.545vw] w-full md:w-auto">
                     <div class="hero-white-card  bg-[#FFFFFF] w-[61.395vw] md:w-[22.454vw] 3xl:w-[21.331vw] h-[66.977vw] md:h-[23.843vw] 3xl:h-[22.650vw] p-[3.488vw] md:p-[1.389vw] 3xl:p-[1.319vw] rounded-[1.395vw] md:rounded-[0.347vw] 3xl:rounded-[0.330vw]">
                         <div class="flex justify-end">
                             <img src="{{ secure_asset('assets/images/home/celeste-color-logo.png') }}" class="w-[10.930vw] md:w-[3.588vw] 3xl:w-[3.409vw] h-auto" alt="">
