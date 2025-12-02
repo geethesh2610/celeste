@@ -21,8 +21,8 @@
 
     {{-- Services Section Start --}}
     <section data-no-glass-active class="relative h-[60vh] md:h-[40vh] lg:h-screen has-background overflow-hidden">
-        <img data-speed="0.5" src="{{ secure_asset('assets/images/services/commercial.png') }}" class="hidden md:block w-full h-full object-cover object-bottom z-1" alt="">
-        <img src="{{ secure_asset('assets/images/services/commercial.png') }}" class="md:hidden w-full h-full object-cover object-bottom z-1" alt="">
+        <img data-speed="0.5" src="{{ secure_asset('assets/images/services/commercial.jpeg') }}" class="hidden md:block w-full h-full object-cover object-bottom z-1" alt="">
+        <img src="{{ secure_asset('assets/images/services/commercial.jpeg') }}" class="md:hidden w-full h-full object-cover object-bottom z-1" alt="">
         <div class="absolute inset-0 flex items-end pb-[12vw] p-[4.651vw] md:p-[3.472vw] 3xl:p-[3.299vw]">
             <div class="flex flex-col gap-[2.791vw] md:gap-[0.694vw] 3xl:gap-[0.660vw]">
                 <div class="flex items-center gap-[1vw] font-satoshi font-medium text-[#EBEBEB] font-bold text15px-mobile text18px-desktop leading-[1.61]">
