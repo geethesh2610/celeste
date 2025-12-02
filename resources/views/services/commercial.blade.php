@@ -280,8 +280,8 @@
                     <img src="{{ secure_asset('assets/images/home/celeste-color-logo.png') }}" class="size-[10.465vw] md:size-[12.500vw] 3xl:size-[11.875vw] absolute right-[6.953vw] md:right-[3.472vw] 3xl:right-[3.299vw] bottom-[6.953vw] md:bottom-[3.472vw] 3xl:bottom-[3.299vw]" alt="">
                 </div>
                 <div class="relative aspect-square md:aspect-auto rounded-[2.326vw] md:rounded-[0.579vw] 3xl:rounded-[0.550vw] bg-[#F2EEE8] p-[13.953vw] md:p-[3.472vw] 3xl:p-[3.299vw] overflow-hidden">
-                    <img data-speed=".75" src="{{ secure_asset('assets/images/services/contact.png') }}" class="hidden md:block absolute z-0 top-0 left-0 w-full h-[120%] object-cover" alt="">
-                    <img src="{{ secure_asset('assets/images/services/contact.png') }}" class="md:hidden absolute z-0 top-0 left-0 w-full h-[120%] object-cover" alt="">
+                    <img data-speed=".75" src="{{ secure_asset('assets/images/plots/form.png') }}" class="hidden md:block absolute z-0 top-0 left-0 w-full h-[120%] object-cover" alt="">
+                    <img src="{{ secure_asset('assets/images/plots/form.png') }}" class="md:hidden absolute z-0 top-0 left-0 w-full h-[120%] object-cover" alt="">
                 </div>
             </div>
         </div>
