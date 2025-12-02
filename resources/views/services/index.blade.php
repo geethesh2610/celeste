@@ -424,7 +424,7 @@
                         'slug' => 'residential',
                         'title' => 'Residential Plots Info',
                         'excerpt' => 'Integrated geospatial & advisory capacity, from mapping to monetization.',
-                        'image' => secure_asset('assets/images/home/blog-1.png'),
+                        'image' => secure_asset('assets/images/home/expertise-1.png'),
                     ],
                     [
                         'label' => 'Commercial Plots',
@@ -432,7 +432,7 @@
                         'slug' => 'commercial',
                         'title' => 'Commercial Plots Info',
                         'excerpt' => 'Integrated geospatial & advisory capacity, from mapping to monetization.',
-                        'image' => secure_asset('assets/images/home/blog-1.png'),
+                        'image' => secure_asset('assets/images/home/expertise-2.png'),
                     ],
                     [
                         'label' => 'Industrial Projects',
@@ -440,7 +440,7 @@
                         'slug' => 'industrial-projects',
                         'title' => 'Industrial & Logistic Plots Info',
                         'excerpt' => 'Integrated geospatial & advisory capacity, from mapping to monetization.',
-                        'image' => secure_asset('assets/images/home/blog-1.png'),
+                        'image' => secure_asset('assets/images/home/expertise-3.png'),
                     ],
                     [
                         'label' => 'Offplan Projects',
@@ -448,7 +448,7 @@
                         'slug' => 'offplan-projects',
                         'title' => 'OffPlan Projects Info',
                         'excerpt' => 'Integrated geospatial & advisory capacity, from mapping to monetization.',
-                        'image' => secure_asset('assets/images/home/blog-1.png'),
+                        'image' => secure_asset('assets/images/home/offplan.jpg'),
                     ],
                 ];
             @endphp
@@ -471,7 +471,7 @@
                             <div class="flex flex-col md:flex-row md:items-end gap-[6.163vw] md:gap-[2.778vw] 3xl:gap-[2.639vw] w-full">
 
                                 <div class="w-full md:w-[16.609vw] 3xl:w-[15.778vw] rounded-[0.930vw] md:rounded-[0.231vw] 3xl:rounded-[0.220vw] overflow-hidden aspect-[1.30/1]">
-                                    <img src="{{ $item['image'] }}" class="w-full h-auto object-cover" alt="{{ $item['title'] }}">
+                                    <img src="{{ $item['image'] }}" class="w-full h-full object-cover" alt="{{ $item['title'] }}">
                                 </div>
 
                                 <div class="flex-1 flex flex-col w-full md:w-[33.738vw] 3xl:w-[32.052vw]">
@@ -584,7 +584,7 @@
 
                 </div>
                 <div class="w-full md:w-[36.458vw] 3xl:w-[34.635vw]">
-                    <img src="{{ secure_asset('assets/images/about/about-expertise.png') }}" class="w-full h-auto object-cover" alt="">
+                    <img src="{{ secure_asset('assets/images/services/pertner.png') }}" class="w-full h-full object-cover" alt="">
                 </div>
             </div>
         </div>
