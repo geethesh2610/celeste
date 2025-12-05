@@ -3,7 +3,6 @@
 namespace App\Filament\Resources\LeadCaptures\Schemas;
 
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
-use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Group;
@@ -28,21 +27,6 @@ class LeadCaptureForm
                                     ->label('Project Name')
                                     ->required()
                                     ->maxLength(255),
-
-                                TextInput::make('price')
-                                    ->label('Price')
-                                    ->maxLength(255),
-
-                                TextInput::make('landmark')
-                                    ->label('Nearest Landmark')
-                                    ->maxLength(255)
-                                    ->columnSpan(2),
-
-                                Textarea::make('excerpt')
-                                    ->label('Excerpt / Short Description')
-                                    ->rows(3)
-                                    ->columnSpan(2)
-                                    ->maxLength(500),
                             ])
                             ->columns(2), // 👈 2-column grid
                     ])
