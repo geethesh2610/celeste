@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\LeadCapture;
 
 class WebsiteController extends Controller
 {
@@ -16,7 +17,11 @@ class WebsiteController extends Controller
 
         $blogs = Blog::latest()->take(3)->get();
 
-        return view('welcome', compact('blogs'));
+        $leadCaptures = LeadCapture::where('is_published', true)
+            ->latest()
+            ->get();
+
+        return view('welcome', compact('blogs', 'leadCaptures'));
     }
 
     public function about()

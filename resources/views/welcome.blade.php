@@ -1,5 +1,72 @@
 <x-layout>
 
+    @push('style')
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <style>
+            #lead-popup {
+                display: none;
+            }
+        </style>
+    @endpush
+
+    {{-- Lead Form --}}
+    @if ($leadCaptures->count() > 0)
+        <div id="lead-popup" class="fixed! h-screen w-screen top-0 left-0 bg-black/30 z-99">
+            <div class="relative w-full flex items-center justify-center pt-[50vw] md:pt-[8vw]">
+                <div class="w-[90%] md:w-[70%] lead-container bg-[#F2EEE8] rounded-[2.326vw] md:rounded-[0.579vw] 3xl:rounded-[0.550vw] relative overflow-hidden">
+                    <button type="button" class="close-lead cursor-pointer z-1 absolute top-[1vw] right-[1vw] rounded-full bg-[#F2EEE8] hover:opacity-90 flex items-center justify-center  p-[1.395vw] md:p-[0.347vw] 3xl:p-[0.330vw]">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-[4.651vw] md:size-[1.157vw] 3xl:size-[1.100vw]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-[1.157vw] 3xl:gap-[1.100vw] relative z-0">
+                        <div class="relative pt-[9vw] p-[4.651vw] md:p-[3.472vw] 3xl:p-[3.299vw] order-2 md:order-1">
+                            <div class="swiper lead-slider relative">
+                                <div class="swiper-wrapper">
+                                    @foreach ($leadCaptures as $lead)
+                                        <div class="swiper-slide">
+                                            <div class="relative">
+                                                <div data-animate class="flex items-center gap-[2.558vw] md:gap-[0.637vw] 3xl:gap-[0.605vw] mb-[4.651vw] md:mb-[2.083vw] 3xl:mb-[1.979vw]">
+                                                    <p class="uppercase font-satoshi text-[#1D1D1D] font-bold text20px-mobile text32px-desktop">{{ $lead['name'] }}</p>
+                                                </div>
+
+                                                <div class="mt-[8.442vw] md:mt-[3.340vw] 3xl:mt-[3.123vw]">
+                                                    <livewire:lead-form :lead_capture_id="$lead['id']" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                            <div class="flex justify-center translate-y-[50%] md:translate-y-[175%]">
+
+                                <div class="lead-pagination w-max! bottom-0!"></div>
+                            </div>
+                        </div>
+
+                        <div class="relative aspect-video md:aspect-auto rounded-0 md:rounded-[0.579vw] 3xl:rounded-[0.550vw] bg-[#F2EEE8] overflow-hidden order-1 md:order-2">
+                            <div class="swiper image-slider h-full">
+                                <div class="swiper-wrapper">
+
+                                    @foreach ($leadCaptures as $lead)
+                                        <div class="swiper-slide">
+                                            <img src="{{ $lead->getFirstMediaUrl('lead_image') ?: secure_asset('assets/images/plots/form.png') }}" class="absolute inset-0 h-full w-full object-cover hidden md:block" alt="Lead banner">
+                                            <img src="{{ $lead->getFirstMediaUrl('lead_image_mobile') ?: secure_asset('assets/images/plots/form.png') }}" class="absolute inset-0 h-full w-full object-cover md:hidden " alt="Lead banner">
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endif
+
+
     {{-- Landing Section Start --}}
     <section data-no-glass-active class="hero-section min-h-[110vh] relative md:min-h-[40vh] lg:h-[105vh] has-background flex overflow-hidden">
         <div class="absolute inset-0 z-0">
@@ -405,12 +472,12 @@
                 </div>
 
                 @php
-                    $developers = ['damac.png', 'emiratess.png', 'nakheel.png', 'emaar.png', 'mag.png', 'omniyat.png'];
+                    $developers = ['damac.png', 'emiratess.png', 'nakheel.png', 'emaar.png', 'mag.png', 'omniyat.png', 'rana.png'];
                 @endphp
                 <div class="flex-1 grid grid-cols-3 gap-[3.953vw] md:gap-[2.488vw] 3xl:gap-[2.364vw]">
                     @foreach ($developers as $dev)
                         <div class="aspect-square bg-[#F2EEE8] flex items-center justify-center">
-                            <img src="{{ secure_asset('assets/images/home/' . $dev) }}" class="size-full" alt="">
+                            <img src="{{ secure_asset('assets/images/home/' . $dev) }}" class="size-full object-contain" alt="">
                         </div>
                     @endforeach
                 </div>
@@ -470,10 +537,10 @@
                                     </div>
                                     <div class="flex-1 flex flex-col md:w-[33.738vw] 3xl:w-[32.052vw]">
                                         {{-- <div class="flex items-center gap-[3.256vw] md:gap-[0.810vw] 3xl:gap-[0.770vw]">
-                                        <p class="font-satoshi font-medium text-[#3E3E3E] text14px-mobile text18px-desktop leading-[1.72]">12 Sept, 2025</p>
-                                        <span class="rounded-full bg-[#00A7E1] size-[1.860vw] md:size-[0.463vw] 3xl:size-[0.440vw]"></span>
-                                        <p class="font-satoshi font-medium text-[#3E3E3E] text14px-mobile text18px-desktop leading-[1.72]">4 min read</p>
-                                    </div> --}}
+                                    <p class="font-satoshi font-medium text-[#3E3E3E] text14px-mobile text18px-desktop leading-[1.72]">12 Sept, 2025</p>
+                                    <span class="rounded-full bg-[#00A7E1] size-[1.860vw] md:size-[0.463vw] 3xl:size-[0.440vw]"></span>
+                                    <p class="font-satoshi font-medium text-[#3E3E3E] text14px-mobile text18px-desktop leading-[1.72]">4 min read</p>
+                                </div> --}}
 
                                         <p class="font-uncut text24px-mobile text32px-desktop font-medium leading-tight text-[#000000] mt-[4.186vw] md:mt-[1.042vw] 3xl:mt-[0.990vw] -translate-x-[0.074vw] md:-translate-x-[0.019vw] 3xl:-translate-x-[0.018vw]">{{ $blog->title }}</p>
 
@@ -628,5 +695,96 @@
     {{-- Dashed Border End --}}
 
 
+    @push('script')
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+
+                const leadPopup = document.getElementById("lead-popup");
+                if (!leadPopup) return;
+
+                // If popup was already shown this tab, do nothing
+                if (sessionStorage.getItem("lead_popup_shown") === "yes") {
+                    return;
+                }
+
+                // Delay visible popup (3–5 sec logic)
+                setTimeout(() => {
+                    leadPopup.style.display = "block"; // Show popup smoothly
+                }, 3000); // change 3000 to 5000 for 5 seconds
+
+
+                // Close button handler
+                document.querySelector("#lead-popup .close-lead").addEventListener("click", closeLeadPopup);
+
+                // Clicking outside overlay closes popup
+                document.addEventListener("click", function(e) {
+                    if (e.target.id === "lead-popup") closeLeadPopup();
+                });
+
+                // ESC closes popup
+                document.addEventListener("keydown", function(e) {
+                    if (e.key === "Escape") closeLeadPopup();
+                });
+
+                function closeLeadPopup() {
+                    leadPopup.style.display = "none";
+                    sessionStorage.setItem("lead_popup_shown", "yes");
+                }
+
+
+                // ===================== SLIDERS ===================== //
+
+                const leadSwiper = new Swiper(".lead-slider", {
+                    loop: true,
+                    spaceBetween: 30,
+                    direction: "horizontal",
+                    speed: 800,
+                    pagination: {
+                        el: ".lead-pagination",
+                        clickable: true
+                    },
+                });
+
+                const imageSwiper = new Swiper(".image-slider", {
+                    loop: true,
+                    // effect: "fade",
+                    // fadeEffect: {
+                    //     crossFade: false
+                    // },
+                    speed: 800
+                });
+
+                // Force initial sync
+                leadSwiper.on("init", () => {
+                    imageSwiper.slideToLoop(leadSwiper.realIndex, 0); // no animation
+                });
+
+                imageSwiper.on("init", () => {
+                    leadSwiper.slideToLoop(imageSwiper.realIndex, 0);
+                });
+
+
+                // Sync Swipers both ways
+                leadSwiper.on("slideChange", () => {
+                    if (leadSwiper.realIndex !== imageSwiper.realIndex) {
+                        imageSwiper.slideToLoop(leadSwiper.realIndex);
+                    }
+                });
+
+                imageSwiper.on("slideChange", () => {
+                    if (imageSwiper.realIndex !== leadSwiper.realIndex) {
+                        leadSwiper.slideToLoop(imageSwiper.realIndex);
+                    }
+                });
+
+                leadSwiper.init();
+                imageSwiper.init();
+
+
+            });
+        </script>
+    @endpush
 
 </x-layout>
