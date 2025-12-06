@@ -13,7 +13,7 @@
     @if ($leadCaptures->count() > 0)
         <div id="lead-popup" class="fixed! h-screen w-screen top-0 left-0 bg-black/30 z-99">
             <div class="relative w-full flex items-center justify-center pt-[50vw] md:pt-[8vw]">
-                <div class="w-[90%] md:w-[70%] lead-container bg-[#F2EEE8] rounded-[2.326vw] md:rounded-[0.579vw] 3xl:rounded-[0.550vw] relative overflow-hidden">
+                <div class="w-[90%] md:w-[70%] lg:w-[70%] lead-container bg-[#F2EEE8] rounded-[2.326vw] md:rounded-[0.579vw] 3xl:rounded-[0.550vw] relative overflow-hidden">
                     <button type="button" class="close-lead cursor-pointer z-1 absolute top-[1vw] right-[1vw] rounded-full bg-[#F2EEE8] hover:opacity-90 flex items-center justify-center  p-[1.395vw] md:p-[0.347vw] 3xl:p-[0.330vw]">
 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-[4.651vw] md:size-[1.157vw] 3xl:size-[1.100vw]">
