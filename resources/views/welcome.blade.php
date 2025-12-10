@@ -21,8 +21,8 @@
                         </svg>
                     </button>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-[1.157vw] 3xl:gap-[1.100vw] relative z-0">
-                        <div class="relative pt-[9vw] p-[4.651vw] md:p-[3.472vw] 3xl:p-[3.299vw] order-2 md:order-1">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-0 relative z-0">
+                        <div class="relative py-[9vw] p-[4.651vw] md:p-[3.472vw] 3xl:p-[3.299vw] order-2 md:order-1">
                             <div class="swiper lead-slider relative">
                                 <div class="swiper-wrapper">
                                     @foreach ($leadCaptures as $lead)
@@ -39,10 +39,16 @@
                                         </div>
                                     @endforeach
                                 </div>
-                            </div>
-                            <div class="flex justify-center translate-y-[50%] md:translate-y-[175%]">
 
-                                <div class="lead-pagination w-max! bottom-0!"></div>
+                            </div>
+                            <div class="flex justify-center items-center translate-y-[50%] md:translate-y-[105%] gap-[3vw] md:gap-[1vw]">
+                                <div class="cursor-pointer duration-300 hover:scale-[1.1] swiper-banner-prev">
+                                    <img src="{{ secure_asset('assets/images/home/arrow-right.png') }}" class="w-[6vw] md:w-[2.25vw] h-auto -scale-x-100" alt="">
+                                </div>
+                                <div class="lead-pagination w-max! bottom-0! mb-[.25vw]"></div>
+                                <div class="cursor-pointer duration-300 hover:scale-[1.1] swiper-banner-next">
+                                    <img src="{{ secure_asset('assets/images/home/arrow-right.png') }}" class="w-[6vw] md:w-[2.25vw] h-auto" alt="">
+                                </div>
                             </div>
                         </div>
 
@@ -65,7 +71,6 @@
             </div>
         </div>
     @endif
-
 
     {{-- Landing Section Start --}}
     <section data-no-glass-active class="hero-section min-h-[110vh] relative md:min-h-[40vh] lg:h-[105vh] has-background flex overflow-hidden">
@@ -745,6 +750,10 @@
                         el: ".lead-pagination",
                         clickable: true
                     },
+                    navigation: {
+                        nextEl: ".swiper-banner-next",
+                        prevEl: ".swiper-banner-prev",
+                    }
                 });
 
                 const imageSwiper = new Swiper(".image-slider", {
