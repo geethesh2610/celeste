@@ -28,6 +28,7 @@ return new class extends Migration
             $table->longText('description')->nullable();
             $table->longText('property_detail')->nullable();
             $table->longText('location')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
